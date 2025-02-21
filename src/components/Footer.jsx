@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="flex flex-col md:flex-row justify-between items-center">
         {/* Left Section */}
         <div className="text-left">
-          <h2 className="text-2xl font-bold">
+          <h2 className="text-2xl font-bold ">
             <span className="text-white">Unio</span>
             <span className="text-blue-500">dessy</span>
           </h2>
