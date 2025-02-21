@@ -1,18 +1,21 @@
 import React from "react";
 import { ArrowLeft } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import Footer from "./Footer";
 
-export default function CaseStudy() {
+export default function Project1() {
+  const navigate = useNavigate();
   return (
     <section className="bg-black text-white min-h-screen px-6 md:px-20 py-16">
-      {/* Back Button */}
-      <button className="flex items-center text-gray-300 hover:text-white transition mb-6">
-        <ArrowLeft className="w-6 h-6" />
+    {/* Back Button (Fixed) */}
+    <button onClick={() => navigate(-1)} className="flex items-center text-gray-300 hover:text-white transition mb-6">
+        <ArrowLeft className="w-6 h-6" /> {/* Now the arrow is clickable */}
         <span className="ml-2">Back</span>
       </button>
 
       {/* Case Study Title */}
       <h1 className="text-4xl md:text-5xl font-bold mb-6">
-        Case Study for <span className="text-red-500">Wassup Media Co.</span>
+        Case Study for <span className="text-blue-500">Wassup Media Co.</span>
       </h1>
 
       {/* Case Study Description */}
@@ -26,7 +29,7 @@ export default function CaseStudy() {
       </p>
 
       {/* Design Approach Section */}
-      <h2 className="text-2xl font-bold text-red-500 mt-12">Design Approach</h2>
+      <h2 className="text-2xl font-bold text-blue-500 mt-12">Design Approach</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-6">
         {/* Color Palette */}
@@ -73,6 +76,7 @@ export default function CaseStudy() {
           call-to-action elements.
         </p>
       </div>
+      <Footer />
     </section>
   );
 }
