@@ -36,7 +36,7 @@ export default function Hero() {
           animationTo={{ opacity: 1, transform: "translateY(0px)" }}
         />
         <RotatingText
-          texts={["Aesthetic", "Sales-boosting", "High-converting","Functional"]}
+          texts={["Aesthetic", " 提升销量", "高转化","Functional"]}
           className="text-blue-500 whitespace-nowrap"
           rotationInterval={2000}  
         />

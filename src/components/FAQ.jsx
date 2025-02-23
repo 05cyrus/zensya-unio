@@ -4,24 +4,24 @@ import Footer from './Footer';
 
 const faqs = [
   {
-    question: "Who's behind Zensya?",
-    answer: "Zensya is a team of expert designers and developers committed to delivering top-notch websites.",
+    question: "Zensyaの運営者は誰ですか？",
+    answer: "Zensyaは、最高品質のウェブサイトを提供する熟練のデザイナーと開発者のチームです。",
   },
   {
-    question: "Why not hire a full-time designer and developer?",
-    answer: "Hiring a full-time team is costly and time-consuming. We provide the same expertise without the overhead.",
+    question: "なぜ専属のデザイナーや開発者を雇わないのですか？",
+    answer: "専属チームを雇うのはコストが高く、時間もかかります。私たちはその専門知識を低コストで提供します。",
   },
   {
-    question: "What if I'm not happy with the results?",
-    answer: "We offer revisions to ensure you are satisfied with the final product.",
+    question: "結果に満足できなかった場合はどうなりますか？",
+    answer: "ご満足いただけるよう、修正対応を行います。",
   },
   {
-    question: "How quickly will I receive my project?",
-    answer: "Most projects are completed within 7-14 days, depending on complexity.",
+    question: "どれくらいの期間でプロジェクトが完了しますか？",
+    answer: "プロジェクトの複雑さによりますが、ほとんどの場合7〜14日以内に完了します。",
   },
   {
-    question: "Can I get a refund?",
-    answer: "If you're not satisfied within the first few days, we offer a money-back guarantee.",
+    question: "返金はできますか？",
+    answer: "最初の数日間でご満足いただけなかった場合は、返金保証を提供しています。",
   },
 ];
 

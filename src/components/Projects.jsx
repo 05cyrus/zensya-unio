@@ -4,8 +4,8 @@ import { ArrowUpRight } from "lucide-react";
 
 const projects = [
   {
-    name: "Wassup Media Co.",
-    image: "/images/WassupMediaCo.png",
+    name: "EdTech.",
+    image: "/images/edtech.jpg",
     link: "/project1",
   },
   {

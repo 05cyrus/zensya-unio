@@ -8,25 +8,25 @@ const testimonials = [
     avatar: "/images/p1.jpg", // Replace with actual user avatar
   },
   {
-    name: "Ruby Liza",
+    name: "Alex Thompson",
     role: "Freelancer",
     text: "Our e-commerce platform's performance skyrocketed after Roopesh optimized it. His deep understanding of Shopify was crucial.",
     avatar: "/images/p2.jpg",
   },
   {
-    name: "David Kim",
+    name: "Lisa Patel",
     role: "Marketing Director, MobileFirst",
     text: "The responsive design Roopesh implemented works flawlessly across all devices. Our mobile conversion rates have increased by 40% since the redesign.",
     avatar: "/images/p3.jpg",
   },
   {
-    name: "Lisa Patel",
+    name: "David Kim",
     role: "Product Owner, EnterpriseApp",
     text: "Roopesh's expertise in Angular helped us modernize our legacy application. The refactored codebase is now much easier to maintain and extend.",
     avatar: "/images/p4.jpg",
   },
   {
-    name: "Alex Thompson",
+    name: "Ruby Liza",
     role: "Accessibility Advocate, InclusiveTech",
     text: "The accessibility improvements Roopesh made to our site have opened up our services to a wider audience. Their commitment to inclusive design is commendable.",
     avatar: "/images/p5.jpg",
