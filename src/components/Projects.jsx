@@ -5,22 +5,22 @@ import { ArrowUpRight } from "lucide-react";
 const projects = [
   {
     name: "Wassup Media Co.",
-    image: "public/images/WassupMediaCo.png",
+    image: "/images/WassupMediaCo.png",
     link: "/project1",
   },
   {
     name: "Prestige",
-    image: "public/images/Prestige.png",
+    image: "/images/Prestige.png",
     link: "/project2",
   },
   {
     name: "Spain Academy",
-    image: "public/images/SpainAcademy.png",
+    image: "/images/SpainAcademy.png",
     link: "/project3",
   },
   {
     name: "Ian's Portfolio",
-    image: "public/images/IanPortfolio.png",
+    image: "/images/IanPortfolio.png",
     link: "/project4",
   },
 ];

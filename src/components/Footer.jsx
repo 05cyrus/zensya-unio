@@ -8,8 +8,8 @@ export default function Footer() {
         {/* Left Section */}
         <div className="text-left">
           <h2 className="text-2xl font-bold ">
-            <span className="text-white">Unio</span>
-            <span className="text-blue-500">dessy</span>
+            <span className="text-white">Zen</span>
+            <span className="text-blue-500">sya</span>
           </h2>
           <p className="text-gray-400 mt-2">
             Transforming ideas into stunning frontend experiences.
@@ -30,15 +30,15 @@ export default function Footer() {
               <Instagram className="w-6 h-6" />
             </a>
           </div>
-          <p className="text-gray-400 mt-2">team@uniodessy.com</p>
+          <p className="text-gray-400 mt-2">team@zensya.com</p>
         </div>
       </div>
 
       {/* Copyright Section */}
       <div className="border-t border-gray-700 mt-6 pt-4 text-center text-gray-500 text-sm">
-        © 2025 Uniodessy. All rights reserved.
+        © 2025 Zensya. All rights reserved.
         <br />
-        Everything by <span className="text-gray-300 italic">Sumit</span>
+        {/* Everything by <span className="text-gray-300 italic">Sumit</span> */}
       </div>
     </footer>
   );

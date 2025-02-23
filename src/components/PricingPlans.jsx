@@ -4,7 +4,7 @@ import StarBorder from "./animations/StarBorder";
 
 const plans = [
   {
-    title: "Unio",
+    title: "Zensya",
     features: [
       "Custom Landing Page Design",
       "Mobile-Optimized and Fast Loading",
@@ -14,7 +14,7 @@ const plans = [
     ],
   },
   {
-    title: "Unio +",
+    title: "Zensya +",
     features: [
       "Full Website Design (Up to 5 Pages)",
       "High-Converting Sales Pages",

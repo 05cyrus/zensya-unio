@@ -15,17 +15,12 @@ export default function Project1() {
 
       {/* Case Study Title */}
       <h1 className="text-4xl md:text-5xl font-bold mb-6">
-        Case Study for <span className="text-blue-500">Wassup Media Co.</span>
+        Case Study for <span className="text-blue-500">EdTech</span>
       </h1>
 
       {/* Case Study Description */}
       <p className="text-gray-300 leading-relaxed max-w-3xl">
-        Wassup Media Co. approached me to design a minimal and sleek website for their content marketing
-        agency. They were looking for a clean, modern design that would effectively highlight their services while
-        maintaining a streamlined user experience. We worked closely with them to understand their brand vision and crafted
-        a website that not only captures their essence but also offers smooth navigation, optimized for mobile and desktop.
-        Through the use of a carefully selected color palette and typography, I helped them achieve a visually appealing
-        site that speaks to their professional yet creative approach in the content marketing space.
+      With the increasing demands on parents' time, staying updated on their child's progress can be challenging. Our goal was to design a solution that simplifies communication between parents and teachers by providing a centralized dashboard accessible via both web and mobile platforms.
       </p>
 
       {/* Design Approach Section */}
@@ -36,15 +31,15 @@ export default function Project1() {
         <div>
           <h3 className="text-xl font-bold">Color Palette</h3>
           <p className="text-gray-400 mt-2">
-            We chose a bold, high-contrast color scheme:
+          We chose a modern, neutral-toned color scheme to ensure clarity and ease of use:
           </p>
           <div className="flex items-center space-x-4 mt-3">
             {/* Color Swatches */}
             <div className="w-6 h-6 bg-gray-900 border border-gray-700 rounded-full"></div>
-            <span className="text-gray-400">#080808</span>
+            <span className="text-gray-400">#F5F5F3</span>
 
-            <div className="w-6 h-6 bg-lime-400 border border-gray-700 rounded-full"></div>
-            <span className="text-gray-400">#95FF2B</span>
+            <div className="w-6 h-6 bg-black-400 border border-gray-700 rounded-full"></div>
+            <span className="text-gray-400">#1A1A1A</span>
           </div>
 
           {/* Explanation */}
@@ -58,11 +53,11 @@ export default function Project1() {
         <div>
           <h3 className="text-xl font-bold">Typography</h3>
           <p className="text-gray-400 mt-2">
-            Our font choices enhance readability and professionalism:
+          Our font choices balance readability and professionalism:
           </p>
           <ul className="mt-4 text-gray-400 space-y-2">
-            <li>• <span className="text-white">Times New Roman</span> for headings, adding a touch of elegance.</li>
-            <li>• <span className="text-white">San Francisco UI Display</span> for body text, ensuring clarity.</li>
+            <li>• <span className="text-white">San Francisco </span> for for body text, ensuring clarity and accessibility.</li>
+            <li>• <span className="text-white">Times New Roman</span>  for headings, adding a refined and authoritative touch.</li>
           </ul>
         </div>
       </div>
@@ -71,10 +66,18 @@ export default function Project1() {
       <div className="mt-12">
         <h3 className="text-xl font-bold">Layout</h3>
         <p className="text-gray-400 mt-2 max-w-3xl">
-          We opted for a spacious, well-balanced layout that guides the user through Wassup Media Co.'s content seamlessly.
-          Key features include a prominent hero section, a grid-based portfolio display, and strategically placed
-          call-to-action elements.
+        We structured the interface with a well-balanced layout to create a seamless experience for parents and teachers.
+        Centralized Dashboard: Parents can easily track their child's academic performance, including grades, attendance, and progress trends over time.
         </p>
+      </div>
+      {/* Design Showcase Section */}
+      <div className="mt-12 ">
+        <h3 className="text-2xl font-bold text-blue-500">Design Showcase</h3>
+        <img 
+          src="/images/p1-new.jpg" 
+          alt="Design showcase preview"
+          className="mt-4 w-full max-w-md flex justify-center mx-auto rounded-lg shadow-lg"
+        />
       </div>
       <Footer />
     </section>

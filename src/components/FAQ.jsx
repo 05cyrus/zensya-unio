@@ -4,8 +4,8 @@ import Footer from './Footer';
 
 const faqs = [
   {
-    question: "Who's behind Uniodessy?",
-    answer: "Uniodessy is a team of expert designers and developers committed to delivering top-notch websites.",
+    question: "Who's behind Zensya?",
+    answer: "Zensya is a team of expert designers and developers committed to delivering top-notch websites.",
   },
   {
     question: "Why not hire a full-time designer and developer?",
