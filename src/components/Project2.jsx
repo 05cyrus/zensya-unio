@@ -3,83 +3,68 @@ import { ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Footer from "./Footer";
 
-export default function Project2() {
-  const navigate = useNavigate(); // Enables navigation
+export default function Project2({ language }) {
+  const navigate = useNavigate();
 
   return (
     <section className="bg-black text-white min-h-screen px-6 md:px-20 py-16">
-    {/* Back Button  */}
-    <button onClick={() => navigate(-1)} className="flex items-center text-gray-300 hover:text-white transition mb-6">
-        <ArrowLeft className="w-6 h-6" /> {/* Now the arrow is clickable */}
-        <span className="ml-2">Back</span>
+      <button onClick={() => navigate(-1)} className="flex items-center text-gray-300 hover:text-white transition mb-6">
+        <ArrowLeft className="w-6 h-6" />
+        <span className="ml-2">{language === "en" ? "Back" : "戻る"}</span>
       </button>
 
-      {/* Case Study Title */}
       <h1 className="text-4xl md:text-5xl font-bold mb-6">
-        Case Study for <span className="text-blue-500">Prestige Drywall Services</span>
+        {language === "en" ? "Case Study for " : "ケーススタディ："}
+        <span className="text-blue-500">{language === "en" ? "Prestige Drywall Services" : "プレステージドライウォールサービス"}</span>
       </h1>
 
-      {/* Case Study Description */}
       <p className="text-gray-300 leading-relaxed max-w-3xl">
-        Prestige approached me to design a bold and compact website for their drywall and remodeling business.
-        They wanted a professional, modern design that would showcase their expertise and reliability while maintaining a 
-        user-friendly experience. We collaborated to understand their brand identity and business goals, crafting a 
-        website that reflects their commitment to quality and customer satisfaction. The final product is optimized for both 
-        mobile and desktop, ensuring accessibility for all users.
+        {language === "en" ? "Prestige Drywall needed a strong online presence to showcase their top-tier remodeling and drywall services. We focused on designing a highly visual and professional website to attract new clients."
+          : "Prestige Drywallは、一流のリモデリングとドライウォールサービスを紹介するために強力なオンラインプレゼンスを必要としていました。新しいクライアントを引き付けるため、視覚的に魅力的でプロフェッショナルなウェブサイトの設計に重点を置きました。"}
       </p>
 
-      {/* Design Approach Section */}
-      <h2 className="text-2xl font-bold text-blue-500 mt-12">Design Approach</h2>
+      <h2 className="text-2xl font-bold text-blue-500 mt-12">
+        {language === "en" ? "Challenges" : "課題"}
+      </h2>
+      <p className="text-gray-300 max-w-3xl">
+        {language === "en" ? "The main challenge was to highlight their craftsmanship while maintaining a fast, responsive, and SEO-optimized website."
+          : "主な課題は、職人技を強調しながら、高速でレスポンシブかつSEO最適化されたウェブサイトを維持することでした。"}
+      </p>
 
+      <h2 className="text-2xl font-bold text-blue-500 mt-12">
+        {language === "en" ? "Design Approach" : "デザインアプローチ"}
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-6">
-        {/* Color Palette */}
         <div>
-          <h3 className="text-xl font-bold">Color Palette</h3>
+          <h3 className="text-xl font-bold">{language === "en" ? "Visual Storytelling" : "ビジュアルストーリーテリング"}</h3>
           <p className="text-gray-400 mt-2">
-            We selected a professional and vibrant color scheme:
+            {language === "en" ? "We integrated high-quality images and videos of past projects to create an engaging experience."
+              : "高品質な画像や過去のプロジェクトの動画を統合し、魅力的な体験を提供しました。"}
           </p>
-          <div className="flex items-center space-x-4 mt-3">
-            {/* Color Swatches */}
-            <div className="w-6 h-6 bg-gray-900 border border-gray-700 rounded-full"></div>
-            <span className="text-gray-400">#0A1929</span>
-
-            <div className="w-6 h-6 bg-yellow-500 border border-gray-700 rounded-full"></div>
-            <span className="text-gray-400">#E5A815</span>
-
-            <div className="w-6 h-6 bg-white border border-gray-700 rounded-full"></div>
-            <span className="text-gray-400">#FFFFFF</span>
-          </div>
-
-          {/* Explanation */}
-          <ul className="mt-4 text-gray-400 space-y-2">
-            <li>• <span className="text-white">#0A1929</span> for the primary background, creating a strong and trustworthy foundation.</li>
-            <li>• <span className="text-white">#E5A815</span> as an energetic accent color for buttons and highlights.</li>
-            <li>• <span className="text-white">#FFFFFF</span> for text and content sections to enhance readability.</li>
-          </ul>
         </div>
-
-        {/* Typography */}
         <div>
-          <h3 className="text-xl font-bold">Typography</h3>
+          <h3 className="text-xl font-bold">{language === "en" ? "Mobile Optimization" : "モバイル最適化"}</h3>
           <p className="text-gray-400 mt-2">
-            Our font choices enhance readability and professionalism:
+            {language === "en" ? "We ensured a seamless experience across all devices, improving accessibility and user engagement."
+              : "すべてのデバイスでシームレスな体験を提供し、アクセシビリティとユーザーエンゲージメントを向上させました。"}
           </p>
-          <ul className="mt-4 text-gray-400 space-y-2">
-            <li>• <span className="text-white">Inter</span> for all text to ensure modern and clean visuals.</li>
-          </ul>
         </div>
       </div>
 
-      {/* Layout Section */}
       <div className="mt-12">
-        <h3 className="text-xl font-bold">Layout</h3>
-        <p className="text-gray-400 mt-2 max-w-3xl">
-          The design is tailored to the nature of Prestige's business, focusing on clarity and user engagement.
-          Key features include a prominent hero section, a compact navigation bar, strategically placed call-to-actions,
-          and a well-organized layout with bold headings and spacious sections to guide users effectively.
+        <h3 className="text-2xl font-bold text-blue-500">{language === "en" ? "Final Outcome" : "最終成果"}</h3>
+        <p className="text-gray-300 max-w-3xl">
+          {language === "en" ? "The result was a professional and visually captivating website that significantly boosted Prestige Drywall's online visibility."
+            : "その結果、Prestige Drywallのオンラインでの可視性を大幅に向上させる、プロフェッショナルで視覚的に魅力的なウェブサイトが完成しました。"}
         </p>
+        <img 
+          src="/images/Prestige.png" 
+          alt="Prestige Drywall Website Design"
+          className="mt-4 w-full max-w-lg flex justify-center mx-auto rounded-lg shadow-lg"
+        />
       </div>
-    <Footer />
+
+      <Footer />
     </section>
   );
 }

@@ -3,52 +3,35 @@ import { LayoutGrid, Zap, Puzzle, Layers, Users, Infinity } from "lucide-react";
 
 const features = [
   {
-    title: "Responsive Design",
-    description: "Flawless experiences across all devices and screen sizes.",
+    title: { en: "Responsive Design", ja: "レスポンシブデザイン" },
+    description: { en: "Flawless experiences across all devices and screen sizes.", ja: "すべてのデバイスと画面サイズで完璧な体験を提供。" },
     icon: <LayoutGrid className="w-8 h-8 text-blue-500" />,
   },
   {
-    title: "Lightning Fast",
-    description: "Optimized code for speedy load times and smooth interactions.",
+    title: { en: "Lightning Fast", ja: "超高速" },
+    description: { en: "Optimized code for speedy load times and smooth interactions.", ja: "高速な読み込みとスムーズな操作のための最適化されたコード。" },
     icon: <Zap className="w-8 h-8 text-blue-500" />,
   },
   {
-    title: "Custom Solutions",
-    description: "Tailor-made frontend solutions to match your unique requirements.",
+    title: { en: "Custom Solutions", ja: "カスタムソリューション" },
+    description: { en: "Tailor-made frontend solutions to match your unique requirements.", ja: "独自の要件に合ったオーダーメイドのフロントエンドソリューション。" },
     icon: <Puzzle className="w-8 h-8 text-blue-500" />,
-  },
-  {
-    title: "Modern Frameworks",
-    description: "Expertise in React, NextJS, MERN, and other cutting-edge technologies.",
-    icon: <Layers className="w-8 h-8 text-blue-500" />,
-  },
-  {
-    title: "Collaborative Approach",
-    description: "We work closely with your team for seamless integration.",
-    icon: <Users className="w-8 h-8 text-blue-500" />,
-  },
-  {
-    title: "Ongoing Support",
-    description: "Continuous maintenance and updates to keep your frontend fresh.",
-    icon: <Infinity className="w-8 h-8 text-blue-500" />,
-  },
+  }
 ];
 
-export default function WhyUs() {
+export default function WhyUs({ language }) {
   return (
     <section className="py-20 bg-black text-white text-center">
-      {/* Heading */}
       <h2 className="text-4xl md:text-5xl font-bold">
-        But, like <span className="text-blue-500">why</span> us?
+        {language === "en" ? "But, like why us?" : "でも、なぜ私たち？"}
       </h2>
 
-      {/* Features Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mt-12 px-6 md:px-20">
         {features.map((feature, index) => (
           <div key={index} className="flex flex-col items-start space-y-4">
             {feature.icon}
-            <h3 className="text-lg font-semibold">{feature.title}</h3>
-            <p className="text-gray-400">{feature.description}</p>
+            <h3 className="text-lg font-semibold">{feature.title[language]}</h3>
+            <p className="text-gray-400">{feature.description[language]}</p>
           </div>
         ))}
       </div>
