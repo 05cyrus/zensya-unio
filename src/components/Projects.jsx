@@ -19,8 +19,8 @@ const projects = [
     link: "/project3",
   },
   {
-    name: { en: "Ian's Portfolio", ja: "イアンのポートフォリオ" },
-    image: "/images/IanPortfolio.png",
+    name: { en: "Sumit's Portfolio", ja: "イアンのポートフォリオ" },
+    image: "/images/sumit-portfolio-mockup.jpg",
     link: "/project4",
   },
 ];

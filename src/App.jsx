@@ -1,6 +1,6 @@
 import './index.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Project1 from "./components/Project1";
 import Project2 from "./components/Project2";
 import Project3 from "./components/Project3";
@@ -13,26 +13,36 @@ import Testimonials from "./components/Testimonials";
 import WhyUs from "./components/WhyUs";
 import PricingPlans from "./components/PricingPlans";
 import FAQ from "./components/FAQ";
-import Footer from "./components/Footer";
 
 function App() {
   const [language, setLanguage] = useState("en");
 
+  // Create references for sections
+  const projectsRef = useRef(null);
+  const whyUsRef = useRef(null);
+  const faqRef = useRef(null);
+
   return (
     <Router>
-      <Navbar onLanguageChange={setLanguage} />
+      {/* Pass refs to Navbar */}
+      <Navbar 
+        onLanguageChange={setLanguage}
+        projectsRef={projectsRef}
+        whyUsRef={whyUsRef}
+        faqRef={faqRef}
+      />
       <Routes>
         <Route
           path="/"
           element={
             <>
               <Hero language={language} />  
-              <Projects language={language} />
+              <div ref={projectsRef}><Projects language={language} /></div>
               <Process language={language} />
               <Testimonials language={language} />
-              <WhyUs language={language} />
+              <div ref={whyUsRef}><WhyUs language={language} /></div>
               <PricingPlans language={language} />
-              <FAQ language={language} />
+              <div ref={faqRef}><FAQ language={language} /></div>
             </>
           }
         />

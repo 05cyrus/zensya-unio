@@ -15,12 +15,12 @@ export default function Project4({ language }) {
 
       <h1 className="text-4xl md:text-5xl font-bold mb-6">
         {language === "en" ? "Case Study for " : "ケーススタディ："}
-        <span className="text-blue-500">{language === "en" ? "Ian's Portfolio" : "イアンのポートフォリオ"}</span>
+        <span className="text-blue-500">{language === "en" ? "Sumit's Portfolio" : "イアンのポートフォリオ"}</span>
       </h1>
 
       <p className="text-gray-300 leading-relaxed max-w-3xl">
         {language === "en" 
-          ? "Ian, a talented UI/UX designer, wanted a personal portfolio website that showcased his design skills and professional journey. He needed a sleek, modern layout that was fully responsive and performance-optimized."
+          ? "Sumit, a talented UI/UX designer, wanted a personal portfolio website that showcased his design skills and professional journey. He needed a sleek, modern layout that was fully responsive and performance-optimized."
           : "才能あるUI/UXデザイナーのイアンは、デザインスキルとプロフェッショナルな旅を紹介する個人のポートフォリオウェブサイトを求めていました。彼は、完全にレスポンシブでパフォーマンス最適化された洗練されたモダンなレイアウトを必要としていました。"}
       </p>
 
@@ -60,8 +60,8 @@ export default function Project4({ language }) {
             : "最終的なデザインは、イアンの作品をインタラクティブなスムーズスクロールレイアウトで効果的に紹介し、彼の強みを際立たせました。"}
         </p>
         <img 
-          src="/images/IanPortfolio.png" 
-          alt="Ian's Portfolio Design"
+          src="/images/sumit-portfolio.png" 
+          alt="sumit's Portfolio Design"
           className="mt-4 w-full max-w-lg flex justify-center mx-auto rounded-lg shadow-lg"
         />
       </div>

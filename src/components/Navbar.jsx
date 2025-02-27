@@ -1,11 +1,18 @@
 import React, { useState } from "react";
 
-export default function Navbar({ onLanguageChange }) {
+export default function Navbar({ onLanguageChange, projectsRef, whyUsRef, faqRef }) {
   const [language, setLanguage] = useState("en");
 
   const handleLanguageChange = (lang) => {
     setLanguage(lang);
     onLanguageChange(lang);
+  };
+
+  // Function to smoothly scroll to a section
+  const scrollToSection = (ref) => {
+    if (ref && ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   };
 
   return (
@@ -14,12 +21,18 @@ export default function Navbar({ onLanguageChange }) {
         {/* Logo and Navigation */}
         <div className="flex items-center space-x-6">
           <a href="/" className="flex items-center">
-            <img src="../../images/logo-2.png" alt="Logo" className="w-8 h-8 rounded-full" />
+            <img src="../../images/logo.jpg" alt="Logo" className="w-8 h-8 rounded-full" />
           </a>
           <nav className="hidden md:flex space-x-6">
-            <a href="#work" className="text-white text-sm hover:text-gray-300">{language === "en" ? "Work" : "仕事"}</a>
-            <a href="#benefits" className="text-white text-sm hover:text-gray-300">{language === "en" ? "Benefits" : "利点"}</a>
-            <a href="#faq" className="text-white text-sm hover:text-gray-300">{language === "en" ? "FAQ" : "よくある質問"}</a>
+            <button onClick={() => scrollToSection(projectsRef)} className="text-white text-sm hover:text-gray-300">
+              {language === "en" ? "Work" : "仕事"}
+            </button>
+            <button onClick={() => scrollToSection(whyUsRef)} className="text-white text-sm hover:text-gray-300">
+              {language === "en" ? "Benefits" : "利点"}
+            </button>
+            <button onClick={() => scrollToSection(faqRef)} className="text-white text-sm hover:text-gray-300">
+              {language === "en" ? "FAQ" : "よくある質問"}
+            </button>
           </nav>
         </div>
 
