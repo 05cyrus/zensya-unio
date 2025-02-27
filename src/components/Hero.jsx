@@ -7,7 +7,7 @@ export default function Hero({ language }) {
   return (
     <section className="h-screen bg-gradient-to-b from-blue-800/100 via-black/90 to-black text-white flex flex-col justify-center items-center px-4 text-center">
       {/* Trust Indicators */}
-      <div className="flex items-center gap-3 mb-6">
+      {/* <div className="flex items-center gap-3 mb-6">
         <div className="flex -space-x-2">
           {[1, 2, 3, 4, 5, 6].map((_, i) => (
             <img
@@ -26,7 +26,7 @@ export default function Hero({ language }) {
         <span className="text-sm text-gray-400">
           {language === "en" ? "50+ Clients Satisfied" : "50+ のクライアントが満足"}
         </span>
-      </div>
+      </div> */}
 
       {/* ✨ Animated Split Heading */}
       <h1 className="text-4xl md:text-6xl lg:text-7xl font-medium leading-tight max-w-4xl flex items-center justify-center gap-2 whitespace-nowrap">

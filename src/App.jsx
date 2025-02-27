@@ -39,8 +39,8 @@ function App() {
               <Hero language={language} />  
               <div ref={projectsRef}><Projects language={language} /></div>
               <Process language={language} />
-              <Testimonials language={language} />
-              <div ref={whyUsRef}><WhyUs language={language} /></div>
+              {/* <Testimonials language={language} />*/}
+              <div ref={whyUsRef}><WhyUs language={language} /></div> 
               <PricingPlans language={language} />
               <div ref={faqRef}><FAQ language={language} /></div>
             </>

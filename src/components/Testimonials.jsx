@@ -19,18 +19,18 @@ const testimonials = [
     text: "Zensya exceeded my expectations with their ability to create a stunning website for my business. Their attention to detail and creativity truly sets them apart. I highly recommend Zensya to anyone looking for a professional and unique website design service.",
     avatar: "/images/p3.jpg",
   },
-  // {
-  //   name: "Botan sakata ",
-  //   role: "Product Owner, EnterpriseApp",
-  //   text: "Zensya exceeded my expectations with their Japanese-inspired custom websites. Their attention to detail and creativity truly sets them apart. I am thrilled with the website they created for my business!",
-  //   avatar: "/images/p4.jpg",
-  // },
-  // {
-  //   name: "Samantha Miller",
-  //   role: "Accessibility Advocate, InclusiveTech",
-  //   text: "Zensya did an outstanding job creating a custom website that perfectly represents my business. Their attention to detail and professionalism truly sets them apart. I highly recommend Zensya for anyone looking to elevate their online presence.",
-  //   avatar: "/images/p5.jpg",
-  // },
+  {
+    name: "Botan sakata ",
+    role: "Product Owner, EnterpriseApp",
+    text: "Zensya exceeded my expectations with their Japanese-inspired custom websites. Their attention to detail and creativity truly sets them apart. I am thrilled with the website they created for my business!",
+    avatar: "/images/p4.jpg",
+  },
+  {
+    name: "Samantha Miller",
+    role: "Accessibility Advocate, InclusiveTech",
+    text: "Zensya did an outstanding job creating a custom website that perfectly represents my business. Their attention to detail and professionalism truly sets them apart. I highly recommend Zensya for anyone looking to elevate their online presence.",
+    avatar: "/images/p5.jpg",
+  },
 ];
 
 export default function Testimonials({ language }) {
