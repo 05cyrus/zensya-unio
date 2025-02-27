@@ -58,7 +58,7 @@ export default function Project3({ language }) {
             : "スペインアカデミーの新しいウェブサイトにより、国際的な応募が35%増加し、ユーザーの定着率が向上しました。"}
         </p>
         <img 
-          src="/images/SpainAcademy.png" 
+          src="/images/Spain-Academy.png" 
           alt="Spain Academy Website Design"
           className="mt-4 w-full max-w-lg flex justify-center mx-auto rounded-lg shadow-lg"
         />

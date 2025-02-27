@@ -4,13 +4,13 @@ import { ArrowUpRight } from "lucide-react";
 
 const projects = [
   {
-    name: { en: "EdTech", ja: "エドテック" },
-    image: "/images/edtech.jpg",
+    name: { en: "Cuyar", ja: "エドテック" },
+    image: "/images/Real-estate-mockup.png",
     link: "/project1",
   },
   {
     name: { en: "Prestige", ja: "プレステージ" },
-    image: "/images/Prestige.png",
+    image: "/images/Sushi-mockup.png",
     link: "/project2",
   },
   {
