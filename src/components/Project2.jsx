@@ -18,14 +18,14 @@ export default function Project2({ language }) {
         <span className="text-blue-500">{language === "en" ? "Sushi Sensation Website" : "寿司センセーション ウェブサイト"}</span>
       </h1>
 
-      <p className="text-gray-300 leading-relaxed max-w-3xl">
+      {/* <p className="text-gray-300 leading-relaxed max-w-3xl">
         {language === "en" 
           ? "Sushi Sensation required a modern and visually immersive website to showcase its premium dining experience. The goal was to create an elegant, user-friendly platform that seamlessly integrates menu browsing, reservations, and storytelling."
           : "寿司センセーションは、プレミアムなダイニング体験を紹介するために、モダンで視覚的に魅力的なウェブサイトを必要としていました。メニューの閲覧、予約、ストーリーテリングをシームレスに統合するエレガントで使いやすいプラットフォームを作成することが目標でした。"
         }
-      </p>
+      </p> */}
 
-      <h2 className="text-2xl font-bold text-blue-500 mt-12">
+      {/* <h2 className="text-2xl font-bold text-blue-500 mt-12">
         {language === "en" ? "Challenges" : "課題"}
       </h2>
       <p className="text-gray-300 max-w-3xl">
@@ -33,7 +33,7 @@ export default function Project2({ language }) {
           ? "The main challenge was to balance aesthetics with functionality, ensuring a luxurious yet intuitive experience across devices while maintaining fast loading speeds and SEO optimization."
           : "主な課題は、美しさと機能性のバランスを取ることでした。すべてのデバイスで直感的かつ高級感のある体験を提供しつつ、高速な読み込み速度とSEO最適化を維持することが求められました。"
         }
-      </p>
+      </p> */}
 
       <h2 className="text-2xl font-bold text-blue-500 mt-12">
         {language === "en" ? "Design Approach" : "デザインアプローチ"}
@@ -78,16 +78,17 @@ export default function Project2({ language }) {
       </div>
 
       <div className="mt-12">
-        <h3 className="text-2xl font-bold text-blue-500">{language === "en" ? "Final Outcome" : "最終成果"}</h3>
+        {/* <h3 className="text-2xl font-bold text-blue-500">{language === "en" ? "Final Outcome" : "最終成果"}</h3>
         <p className="text-gray-300 max-w-3xl">
           {language === "en" 
             ? "The final result is a sleek, high-performance website that elevates Sushi Sensation’s brand image, increases online reservations, and enhances customer engagement."
             : "最終的に、Sushi Sensationのブランドイメージを高め、オンライン予約を増加させ、顧客エンゲージメントを向上させる洗練された高性能なウェブサイトが完成しました。"
           }
-        </p>
+        </p> */}
         <img 
-          src="/images/Sushi.png" 
+          src="/images/Sushi.jpg" 
           alt="Sushi Sensation Website Design"
+          loading="lazy"
           className="mt-4 w-full max-w-lg flex justify-center mx-auto rounded-lg shadow-lg"
         />
       </div>

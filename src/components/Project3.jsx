@@ -17,19 +17,19 @@ export default function Project3({ language }) {
         {language === "en" ? "Case Study for " : "ケーススタディ："}
         <span className="text-blue-500">{language === "en" ? "Spain Academy" : "スペインアカデミー"}</span>
       </h1>
-
+{/* 
       <p className="text-gray-300 leading-relaxed max-w-3xl">
         {language === "en" ? "Spain Academy needed a dynamic, multilingual website to attract international students. Our goal was to create an engaging, user-friendly platform with seamless navigation."
           : "スペインアカデミーは、国際的な学生を引き付けるためのダイナミックで多言語対応のウェブサイトを必要としていました。私たちの目標は、魅力的で使いやすく、シームレスなナビゲーションを備えたプラットフォームを作成することでした。"}
-      </p>
+      </p> */}
 
-      <h2 className="text-2xl font-bold text-blue-500 mt-12">
+      {/* <h2 className="text-2xl font-bold text-blue-500 mt-12">
         {language === "en" ? "Challenges" : "課題"}
       </h2>
       <p className="text-gray-300 max-w-3xl">
         {language === "en" ? "The biggest challenge was implementing a robust language-switching feature while ensuring that performance and SEO rankings were not affected."
           : "最大の課題は、パフォーマンスやSEOランキングに影響を与えずに強力な言語切り替え機能を実装することでした。"}
-      </p>
+      </p> */}
 
       <h2 className="text-2xl font-bold text-blue-500 mt-12">
         {language === "en" ? "Design Approach" : "デザインアプローチ"}
@@ -52,14 +52,15 @@ export default function Project3({ language }) {
       </div>
 
       <div className="mt-12">
-        <h3 className="text-2xl font-bold text-blue-500">{language === "en" ? "Final Outcome" : "最終成果"}</h3>
+        {/* <h3 className="text-2xl font-bold text-blue-500">{language === "en" ? "Final Outcome" : "最終成果"}</h3>
         <p className="text-gray-300 max-w-3xl">
           {language === "en" ? "Spain Academy's new website increased international applications by 35% and improved user retention."
             : "スペインアカデミーの新しいウェブサイトにより、国際的な応募が35%増加し、ユーザーの定着率が向上しました。"}
-        </p>
+        </p> */}
         <img 
           src="/images/Spain-Academy.png" 
           alt="Spain Academy Website Design"
+          loading="lazy"
           className="mt-4 w-full max-w-lg flex justify-center mx-auto rounded-lg shadow-lg"
         />
       </div>

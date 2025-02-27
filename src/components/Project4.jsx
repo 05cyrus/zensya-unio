@@ -18,7 +18,7 @@ export default function Project4({ language }) {
         <span className="text-blue-500">{language === "en" ? "Sumit's Portfolio" : "イアンのポートフォリオ"}</span>
       </h1>
 
-      <p className="text-gray-300 leading-relaxed max-w-3xl">
+      {/* <p className="text-gray-300 leading-relaxed max-w-3xl">
         {language === "en" 
           ? "Sumit, a talented UI/UX designer, wanted a personal portfolio website that showcased his design skills and professional journey. He needed a sleek, modern layout that was fully responsive and performance-optimized."
           : "才能あるUI/UXデザイナーのイアンは、デザインスキルとプロフェッショナルな旅を紹介する個人のポートフォリオウェブサイトを求めていました。彼は、完全にレスポンシブでパフォーマンス最適化された洗練されたモダンなレイアウトを必要としていました。"}
@@ -31,7 +31,7 @@ export default function Project4({ language }) {
         {language === "en" 
           ? "One of the biggest challenges was making sure Ian’s high-resolution design assets loaded quickly while maintaining a clean aesthetic. We also needed a seamless user experience across all devices."
           : "最大の課題の1つは、イアンの高解像度デザインアセットが迅速に読み込まれ、クリーンな美観を維持できるようにすることでした。また、すべてのデバイスでシームレスなユーザー体験を提供する必要がありました。"}
-      </p>
+      </p> */}
 
       <h2 className="text-2xl font-bold text-blue-500 mt-12">
         {language === "en" ? "Design Approach" : "デザインアプローチ"}
@@ -54,14 +54,15 @@ export default function Project4({ language }) {
       </div>
 
       <div className="mt-12">
-        <h3 className="text-2xl font-bold text-blue-500">{language === "en" ? "Final Outcome" : "最終成果"}</h3>
+        {/* <h3 className="text-2xl font-bold text-blue-500">{language === "en" ? "Final Outcome" : "最終成果"}</h3>
         <p className="text-gray-300 max-w-3xl">
           {language === "en" ? "The final design successfully showcased Ian’s work with an interactive, smooth-scrolling layout that highlights his strengths."
             : "最終的なデザインは、イアンの作品をインタラクティブなスムーズスクロールレイアウトで効果的に紹介し、彼の強みを際立たせました。"}
-        </p>
+        </p> */}
         <img 
           src="/images/sumit-portfolio.png" 
           alt="sumit's Portfolio Design"
+          loading="lazy"
           className="mt-4 w-full max-w-lg flex justify-center mx-auto rounded-lg shadow-lg"
         />
       </div>

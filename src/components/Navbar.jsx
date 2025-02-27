@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 export default function Navbar({ onLanguageChange, projectsRef, whyUsRef, faqRef }) {
   const [language, setLanguage] = useState("en");
 

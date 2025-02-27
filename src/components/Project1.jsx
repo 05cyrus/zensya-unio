@@ -16,15 +16,15 @@ export default function Project1({ language }) {
         {language === "en" ? "Case Study for " : "ケーススタディ："}
         <span className="text-blue-500">{language === "en" ? "Luxury Real Estate Website" : "高級不動産ウェブサイト"}</span>
       </h1>
-
+{/* 
       <p className="text-gray-300 leading-relaxed max-w-3xl">
         {language === "en" 
           ? "A top-tier real estate firm required an elegant and modern website to showcase their premium properties and attract high-net-worth clients. The goal was to create a visually stunning, easy-to-navigate platform that enhances the property browsing and booking experience."
           : "一流の不動産会社は、高級物件を紹介し、富裕層のクライアントを引き付けるために、エレガントでモダンなウェブサイトを必要としていました。視覚的に魅力的で、使いやすいプラットフォームを作成し、物件の閲覧と予約の体験を向上させることが目標でした。"
         }
-      </p>
+      </p> */}
 
-      <h2 className="text-2xl font-bold text-blue-500 mt-12">
+      {/* <h2 className="text-2xl font-bold text-blue-500 mt-12">
         {language === "en" ? "Challenges" : "課題"}
       </h2>
       <p className="text-gray-300 max-w-3xl">
@@ -32,7 +32,7 @@ export default function Project1({ language }) {
           ? "The primary challenge was to design a luxury experience online that mirrored the sophistication and elegance of the properties. Additionally, the website needed to be fast, responsive, and SEO-optimized for high-ranking visibility."
           : "主な課題は、物件の洗練された高級感を反映したラグジュアリーなオンライン体験をデザインすることでした。また、サイトは高速でレスポンシブかつSEO最適化され、高い検索順位を確保する必要がありました。"
         }
-      </p>
+      </p> */}
 
       <h2 className="text-2xl font-bold text-blue-500 mt-12">
         {language === "en" ? "Design Approach" : "デザインアプローチ"}
@@ -77,16 +77,17 @@ export default function Project1({ language }) {
       </div>
 
       <div className="mt-12">
-        <h3 className="text-2xl font-bold text-blue-500">{language === "en" ? "Final Outcome" : "最終成果"}</h3>
+        {/* <h3 className="text-2xl font-bold text-blue-500">{language === "en" ? "Final Outcome" : "最終成果"}</h3>
         <p className="text-gray-300 max-w-3xl">
           {language === "en" 
             ? "The final product is a visually stunning, high-performance real estate website that elevates the brand image and enhances client engagement."
             : "最終的に、視覚的に魅力的で高性能な不動産ウェブサイトが完成し、ブランドイメージを向上させ、クライアントのエンゲージメントを強化しました。"
           }
-        </p>
+        </p> */}
         <img 
           src="/images/Real-estate.png" 
           alt="Luxury Real Estate Website Design"
+          loading="lazy"
           className="mt-4 w-full max-w-lg flex justify-center mx-auto rounded-lg shadow-lg"
         />
       </div>
