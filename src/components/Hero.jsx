@@ -58,9 +58,9 @@ export default function Hero({ language }) {
       </p>
 
       {/* CTA Button */}
-      <a href="#contact" className="mt-6 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 text-lg rounded-full">
+      {/* <a href="#contact" className="mt-6 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 text-lg rounded-full">
         {language === "en" ? "Book a 15-min call" : "15分の通話を予約"}
-      </a>
+      </a> */}
 
       {/* Fixed Price Text */}
       <p className="text-gray-400 mt-4 text-sm">
