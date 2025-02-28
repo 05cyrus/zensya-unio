@@ -1,5 +1,6 @@
 import React from "react";
 import { LayoutGrid, Zap, Puzzle, Layers, Users, Infinity } from "lucide-react";
+import ScrollFloat from './animations/ScrollFloat';
 
 const features = [
   {
@@ -23,7 +24,15 @@ export default function WhyUs({ language }) {
   return (
     <section className="py-20 bg-black text-white text-center">
       <h2 className="text-4xl md:text-5xl font-bold">
+      <ScrollFloat
+            animationDuration={1}
+            ease='back.inOut(2)'
+            scrollStart='center bottom+=50%'
+            scrollEnd='bottom bottom-=40%'
+            stagger={0.03}
+          >
         {language === "en" ? "But, like why us?" : "でも、なぜ私たち？"}
+        </ScrollFloat>
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mt-12 px-6 md:px-20">

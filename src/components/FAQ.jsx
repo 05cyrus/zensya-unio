@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Plus, Minus } from "lucide-react";
 import Footer from "./Footer";
+import ScrollFloat from './animations/ScrollFloat';
 
 const faqs = [
   {
@@ -26,7 +27,15 @@ export default function FAQ({ language }) {
   return (
     <section className="py-20 bg-black text-white text-center">
       <h2 className="text-4xl md:text-5xl font-bold">
-        {language === "en" ? "You got Questions? We got Answers." : "質問がありますか？答えがあります。"}
+      <ScrollFloat
+        animationDuration={1}
+        ease='back.inOut(2)'
+        scrollStart='center bottom+=50%'
+        scrollEnd='bottom bottom-=40%'
+        stagger={0.03}
+      >
+      {language === "en" ? "You got Questions? We got Answers." : "質問がありますか？答えがあります。"}
+      </ScrollFloat>
       </h2>
 
       <div className="mt-12 px-6 md:px-20 max-w-2xl mx-auto">

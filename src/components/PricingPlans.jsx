@@ -1,6 +1,7 @@
 import React from "react";
 import { Check } from "lucide-react";
 import StarBorder from "./animations/StarBorder"; 
+import ScrollFloat from './animations/ScrollFloat';
 
 const plans = [
   {
@@ -38,7 +39,15 @@ export default function PricingPlans({ language }) {
   return (
     <section className="py-20 bg-black text-white text-center">
       <h2 className="text-4xl md:text-5xl font-bold">
+      <ScrollFloat
+            animationDuration={1}
+            ease='back.inOut(2)'
+            scrollStart='center bottom+=50%'
+            scrollEnd='bottom bottom-=40%'
+            stagger={0.03}
+          >
         {language === "en" ? "Transparent Plans." : "透明なプラン。"}
+        </ScrollFloat>
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 px-6 md:px-20">

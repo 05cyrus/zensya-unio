@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollFloat from './animations/ScrollFloat';
 
 const steps = [
   {
@@ -23,7 +24,15 @@ export default function Process({ language }) {
     <section className="py-20 bg-black text-white text-center">
       {/* Heading */}
       <h2 className="text-4xl md:text-5xl font-bold">
+      <ScrollFloat
+            animationDuration={1}
+            ease='back.inOut(2)'
+            scrollStart='center bottom+=50%'
+            scrollEnd='bottom bottom-=40%'
+            stagger={0.03}
+          >
         {language === "en" ? "Our 3-step process." : "3ステッププロセス。"}
+        </ScrollFloat>
       </h2>
 
       {/* Steps Container */}

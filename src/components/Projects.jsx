@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
-
+import BlurText from "./animations/BlurText";
 
 const projects = [
   {
@@ -29,8 +29,14 @@ const projects = [
 export default function Projects({ language }) {
   return (
     <section className="py-20 bg-black text-white text-center">
-        <h2 className="text-4xl md:text-5xl font-bold">
-          {language === "en" ? "Sample Websites Design" : "ウェブサイトデザインのサンプル"}
+        <h2 className="text-4xl md:text-5xl font-bold flex justify-center items-center text-center w-full">
+        <BlurText
+        text={language === "en" ? "Sample Websites Design" : "ウェブサイトデザインのサンプル"}
+        delay={150}
+        animateBy="words"
+        direction="top"
+        className="text-4xl  md:text-6xl font-bold"
+      />
         </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 px-6 md:px-20">
