@@ -1,5 +1,4 @@
 import React from "react";
-import { Star } from "lucide-react";
 import SplitText from "./animations/splitText";  
 import RotatingText from "./animations/RotatingText";
 import Aurora from "./animations/Aurora";

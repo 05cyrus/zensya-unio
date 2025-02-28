@@ -15,7 +15,7 @@ export default function Project2({ language }) {
 
       <h1 className="text-4xl md:text-5xl font-bold mb-6">
         {language === "en" ? "Case Study for " : "ケーススタディ："}
-        <span className="text-blue-500">{language === "en" ? "Sushi Sensation Website" : "寿司センセーション ウェブサイト"}</span>
+        <span className="text-orange-500">{language === "en" ? "Sushi Sensation Website" : "寿司センセーション ウェブサイト"}</span>
       </h1>
 
       {/* <p className="text-gray-300 leading-relaxed max-w-3xl">
@@ -35,7 +35,7 @@ export default function Project2({ language }) {
         }
       </p> */}
 
-      <h2 className="text-2xl font-bold text-blue-500 mt-12">
+      <h2 className="text-2xl font-bold text-orange-500 mt-12">
         {language === "en" ? "Design Approach" : "デザインアプローチ"}
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-6">
